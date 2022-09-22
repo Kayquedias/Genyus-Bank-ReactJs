@@ -1,3 +1,5 @@
 export enum SignUpRoutes {
-  createAccount = "/create"
+  createAccount = "/create",
+  clientPermission = "/create/permission",
+  accountConcluded = "/create/concluded"
 }

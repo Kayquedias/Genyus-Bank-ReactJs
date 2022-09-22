@@ -32,6 +32,11 @@
       font-size: 10px;
       &:first{text-align: right;}
       
+      @media (max-width: 768px) {
+        & {
+          font-size: 0.9rem;
+        }
+      }
       img {
         position: relative;
         top: 8px;
@@ -42,15 +47,26 @@
 
   .btn-position {
     margin-top: 28px;
+
+    @media (max-width: 768px) {
+      & {
+        margin-top: 50px;
+      }
+
+
+      
+    }
+
+    button.extract {
+      background-color: #fff;
+      color: #050D40;
+      font-size: 16px;
+      font-weight: 600;
+      width: 100px;
+      height: 20px;
+      border-radius: 60px;
+    }
   }
 
-  button.extract {
-    background-color: #fff;
-    color: #050D40;
-    font-size: 16px;
-    font-weight: 600;
-    width: 100px;
-    height: 20px;
-    border-radius: 60px;
-  }
+  
 }

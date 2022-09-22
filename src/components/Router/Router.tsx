@@ -13,6 +13,8 @@ import { EmailSuccess } from "../../features/recoverPassword/pages/requestSucces
 import { SMSSuccess } from "../../features/recoverPassword/pages/requestSuccess/SMSSuccess";
 import { SignUpRoutes } from "../../features/signUp/constants/routes";
 import { CreateAccount } from "../../features/signUp/pages/createAccount/CreateAccount";
+import { ContractPermission } from "../../features/signUp/pages/contractTerms/ContractPermission";
+import { SignUpConcluded } from "../../features/signUp/pages/signUpConcluded/SignUpConcluded";
 
 export const RouterComponent: React.FC = () => {
   return (
@@ -68,6 +70,14 @@ export const RouterComponent: React.FC = () => {
         <Route
           path={SignUpRoutes.createAccount}
           element={<CreateAccount />}
+        />
+        <Route
+          path={SignUpRoutes.clientPermission}
+          element={<ContractPermission />}
+        />
+        <Route
+          path={SignUpRoutes.accountConcluded}
+          element={<SignUpConcluded />}
         />
       </Routes>
     </BrowserRouter>
