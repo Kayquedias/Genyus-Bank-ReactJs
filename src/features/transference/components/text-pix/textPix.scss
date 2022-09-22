@@ -1,0 +1,9 @@
+.text-pix{
+  margin: 0 auto;
+  margin-top: 32px;
+  width: 326px;
+  
+  &:last-child {
+    margin-top: 16px;
+  }
+}

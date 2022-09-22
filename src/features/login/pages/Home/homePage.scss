@@ -1,0 +1,13 @@
+#container-services {
+  margin: 0 15px 24px;
+  display: flex;
+  justify-content: space-between;
+
+  .card-service {
+    width: 86px;
+    height: 76px;
+    text-align: center;
+    font-size: 12px;
+    background: #EAF0FD;
+  }
+}
