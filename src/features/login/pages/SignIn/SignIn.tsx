@@ -3,14 +3,14 @@ import { ProcessDescriptionHeader } from "../../../../components/header/Proccess
 import PageContainer from "../../../../components/PageContainer";
 import ProcessPageLayout from "../../../../components/ProcessPageLayout";
 import { Greetings } from "../../components/greetings/Greetings";
-import person from "../../../../_assets/person.svg"
-import lock from "../../../../_assets/lock.svg"
-import confirmed from "../../../../_assets/confirmed.svg"
-import visible from "../../../../_assets/visible.svg"
 import Button from "../../../../components/buttons/Button";
 import ProcessPageFooter from "../../../../components/ProcessPageFooter";
 import { FooterLinks } from "../../components/FooterLinks";
+
 import "./signIn.scss"
+import { images } from "../../constants/images"
+
+import InputMask from "react-input-mask";
 
 
 function SignIn() {
@@ -27,22 +27,21 @@ function SignIn() {
               <div className="cpf-container">
                 <label htmlFor="input-cpf">CPF</label>
                 <div>
-                  <img src={person} alt="perfil" />
-                  <input 
-                    width={15}  
-                    placeholder="000.000.000-00" 
-                    type="number" 
-                    name="cpf" 
-                    id="input-cpf" 
+                  <img src={images.person} alt="perfil" />
+                  <InputMask
+                    mask="999.999.999-99"
+                    placeholder="000-000-000.00"
                     required
-                    />
-                  <img src={confirmed} alt="ok" />
+                    name="cpf"
+                  />
+                   
+                  <img src={images.confirmed} alt="ok" />
                 </div>
               </div>
               <div className="password-container">
                 <label htmlFor="input-password">Senha</label>
                 <div>
-                  <img src={lock} alt="senha" />
+                  <img src={images.lock} alt="senha" />
                   <input 
                     placeholder="Sua senha" 
                     type="password" 
@@ -50,7 +49,7 @@ function SignIn() {
                     id="input-password"
                     required
                   />
-                  <img src={visible} alt="visivel" />
+                  <img src={images.visible} alt="visivel" />
                 </div>
               </div>
               
