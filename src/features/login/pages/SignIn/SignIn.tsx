@@ -6,10 +6,8 @@ import { Greetings } from "../../components/greetings/Greetings";
 import Button from "../../../../components/buttons/Button";
 import ProcessPageFooter from "../../../../components/ProcessPageFooter";
 import { FooterLinks } from "../../components/FooterLinks";
-
 import "./signIn.scss"
 import { images } from "../../constants/images"
-
 import InputMask from "react-input-mask";
 
 
