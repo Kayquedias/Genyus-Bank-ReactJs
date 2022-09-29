@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import "./buttons/buttons.scss"
 
@@ -9,11 +8,12 @@ interface Props {
 }
 
 const ProcessPageFooter = ({buttonNext, buttonBack, children}: Props) => {
+
   return (
     <>
       {children ? '' : <div className="foo-container">
         {buttonBack}
-        <Link to="/card-address/success" >{buttonNext}</Link>
+        <Link to="/" >{buttonNext}</Link>
       </div>}
       {children}
     </>

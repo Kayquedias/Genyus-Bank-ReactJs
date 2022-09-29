@@ -7,10 +7,18 @@ import CardAddress from "../../features/card/pages/CardEntrega/CardAddress";
 import { CardSuccess } from "../../features/card/pages/CardSuccess/CardSuccess";
 import { HomePage } from "../../features/login/pages/Home/HomePage";
 import { RecoverPasswordRoutes } from "../../features/recoverPassword/constants/routes";
-import { InformClientData } from "../../features/recoverPassword/pages/clientData/InformClientData";
+import { ClientCPF } from "../../features/recoverPassword/pages/informCPF/ClientCPF";
+import { RequestPassword } from "../../features/recoverPassword/pages/requestPassword/RequestPassword";
+import { EmailSuccess } from "../../features/recoverPassword/pages/requestSuccess/EmailSuccess";
+import { SMSSuccess } from "../../features/recoverPassword/pages/requestSuccess/SMSSuccess";
+import { SignUpRoutes } from "../../features/signUp/constants/routes";
+import { CreateAccount } from "../../features/signUp/pages/createAccount/CreateAccount";
+import { ContractPermission } from "../../features/signUp/pages/contractTerms/ContractPermission";
+import { SignUpConcluded } from "../../features/signUp/pages/signUpConcluded/SignUpConcluded";
 import { TranfersRoutes } from "../../features/transference/constants/routes";
 import { TransfersPixKey } from "../../features/transference/pages/transferences/TransfersPixKey" 
 import { TransfersValue } from "../../features/transference/pages/transfarences-value/TransfersValue";
+
 
 export const RouterComponent: React.FC = () => {
   return (
@@ -19,20 +27,19 @@ export const RouterComponent: React.FC = () => {
         <Route
           path={SignInRoutes.signIn}
           element={<SignIn />}
-        >
-         <Route
-          path={RecoverPasswordRoutes.clientCPF}
-          element={<InformClientData />}
-          /> 
-        </Route>
+        />
+
         <Route
           path={SignInRoutes.homePage}
           element={<HomePage />}
         />
+
+
         <Route
           path={CardRoutes.card}
           element={<CardSolicitar />}
         />
+
         <Route
           path={CardRoutes.cardDeliver}
           element={<CardAddress />}
@@ -42,16 +49,48 @@ export const RouterComponent: React.FC = () => {
           element={<CardSuccess />}
         />
         <Route
+          path={CardRoutes.cardDeliverSuccess}
+          element={<CardSuccess />}
+        />
+
+
+        <Route
+          path={RecoverPasswordRoutes.clientCPF}
+          element={<ClientCPF />}
+        /> 
+        <Route
+          path={RecoverPasswordRoutes.requestPassword}
+          element={<RequestPassword />}
+        /> 
+        <Route
+          path={RecoverPasswordRoutes.requestSuccessSMS}
+          element={<SMSSuccess />}
+          />
+        <Route
+          path={RecoverPasswordRoutes.requestSuccessEmail}
+          element={<EmailSuccess />}
+        />
+
+        <Route
           path={TranfersRoutes.transfers}
           element={<TransfersPixKey />}
         />        
         <Route
           path={TranfersRoutes.transfersValue}
           element={<TransfersValue />}
-        />        
+        />  
+
         <Route
-          path={CardRoutes.cardDeliverSuccess}
-          element={<CardSuccess />}
+          path={SignUpRoutes.createAccount}
+          element={<CreateAccount />}
+        />
+        <Route
+          path={SignUpRoutes.clientPermission}
+          element={<ContractPermission />}
+        />
+        <Route
+          path={SignUpRoutes.accountConcluded}
+          element={<SignUpConcluded />}
         />
       </Routes>
     </BrowserRouter>

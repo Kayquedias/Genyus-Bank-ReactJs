@@ -22,7 +22,7 @@
   },
   "include": [
     "src"
-  ],
+, "src/features/recoverPassword/pages/clientCPF/.tsx"  ],
   "files": ["src/_config/custom.d.ts"]
 }
 

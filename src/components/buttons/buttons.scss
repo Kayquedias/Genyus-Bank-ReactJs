@@ -1,8 +1,12 @@
 .foo-container {
-  width: 90%;
-  margin: 62px 5% 0;
+  width: 300px;
   display: flex;
   justify-content: space-evenly;
+
+  position: absolute;
+  top: 610px;
+  left: 50%;
+  transform: translate(-50%, 0);
     
   .buttons {
     width: 135px;

@@ -3,4 +3,3 @@ export enum CardRoutes {
   cardDeliver = "/card-address",
   cardDeliverSuccess = "/card-address/success"
 };
-

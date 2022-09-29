@@ -7,8 +7,8 @@ import "./cardSolicitar.scss"
 import logo from "../../../../_assets/card-logo.svg"
 import cardLogo from "../../../../_assets/card-visa.png"
 import cardCircuits from "../../../../_assets/card-circuits.svg"
-import Button from "../../../../components/Button"
-import { Link, BrowserRouter as Router } from "react-router-dom"
+import Button from "../../../../components/buttons/Button"
+import { Link } from "react-router-dom"
 
 export const CardSolicitar = () => {
   return (

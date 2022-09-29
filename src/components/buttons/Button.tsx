@@ -1,9 +1,9 @@
-interface Props{
+interface ButtonProps{
   text: string;
   widthButton?: number;
 }
 
-function Button({ text, widthButton }: Props) {
+function Button({ text, widthButton }: ButtonProps) {
   const style = {
     width: widthButton
   } 
