@@ -9,6 +9,7 @@ import { FooterLinks } from "../../components/FooterLinks";
 import "./signIn.scss"
 import { images } from "../../constants/images"
 import InputMask from "react-input-mask";
+import { Link } from "react-router-dom";
 
 
 function SignIn() {
@@ -31,6 +32,7 @@ function SignIn() {
                     placeholder="000-000-000.00"
                     required
                     name="cpf"
+                    id="verification"
                   />
                    
                   <img src={images.confirmed} alt="ok" />
@@ -67,7 +69,7 @@ function SignIn() {
             </form>
           }
           footer={
-            <ProcessPageFooter>
+            <ProcessPageFooter acess="/home">
               <FooterLinks />
             </ProcessPageFooter> 
           }

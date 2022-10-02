@@ -3,6 +3,7 @@ interface ButtonProps{
   widthButton?: number;
 }
 
+
 function Button({ text, widthButton }: ButtonProps) {
   const style = {
     width: widthButton

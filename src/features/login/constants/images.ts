@@ -5,6 +5,7 @@ import person from "../../../_assets/person.svg"
 import lock from "../../../_assets/lock.svg"
 import confirmed from "../../../_assets/confirmed.svg"
 import visible from "../../../_assets/visible.svg"
+import noVisible from "../../../_assets/noVisible.svg"
 
 export const images = {
   tranfers,
@@ -13,5 +14,6 @@ export const images = {
   person,
   lock,
   confirmed,
-  visible
+  visible,
+  noVisible
 }

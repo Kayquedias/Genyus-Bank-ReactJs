@@ -42,7 +42,7 @@ function CardAddress() {
           </div>
         }
         footer={
-          <ProcessPageFooter buttonNext={<NextButton />} buttonBack={<BackButton />} />
+          <ProcessPageFooter acess="/card-address/success" buttonNext={<NextButton />} buttonBack={<BackButton />} />
         } />
     </PageContainer>
   )

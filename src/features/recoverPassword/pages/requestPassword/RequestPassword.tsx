@@ -38,7 +38,7 @@ export function RequestPassword() {
           </>
         }
         footer={
-          <ProcessPageFooter buttonBack={<BackButton/>}/>
+          <ProcessPageFooter acess="/home" buttonBack={<BackButton/>}/>
         }
       />
     </PageContainer>
