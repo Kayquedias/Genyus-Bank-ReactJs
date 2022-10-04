@@ -6,6 +6,7 @@ import ProcessPageFooter from "../../../../components/ProcessPageFooter";
 import ProcessPageLayout from "../../../../components/ProcessPageLayout";
 import { RecoverPasswordHeader } from "../../components/RecoverPasswordHeader";
 import "./clientCPF.scss"
+import InputMask from "react-input-mask";
 
 export function ClientCPF() {
   return (
@@ -20,12 +21,13 @@ export function ClientCPF() {
 
             <div className="input-cpf">
               <label htmlFor="CPF-input">CPF</label>
-              <input 
-                type="number"
-                id="CPF-input"
-                required
-                placeholder="000.000.000-00" 
-              />
+                <InputMask
+                  mask="999.999.999-99"
+                  placeholder="000-000-000.00"
+                  required
+                  name="cpf"
+                  id="CPF-input"
+                />  
             </div>
           </>
         }
