@@ -14,7 +14,7 @@ export const AppBar = ({arg = true}: Value) => {
     <div id="top-bar">
       <img src={logo} alt="logo Genyus" />
       {button && 
-        <Link to="/home" >
+        <Link to="/" >
           <button className="btn btn-close" >
             <img src={close} alt="fechar" />
             <span>Fechar</span>

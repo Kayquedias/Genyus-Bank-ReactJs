@@ -21,7 +21,7 @@ export function ContractPermission() {
           </div>
         }
         footer={
-          <ProcessPageFooter acess="/home" buttonBack={<BackButton />} buttonNext={<NextButton />} />
+          <ProcessPageFooter acess="/create/concluded" buttonBack={<BackButton />} buttonNext={<NextButton />} />
         }
       />
     </PageContainer>

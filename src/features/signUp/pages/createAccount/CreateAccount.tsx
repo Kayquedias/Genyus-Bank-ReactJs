@@ -1,6 +1,7 @@
 import InputMask from "react-input-mask"
 import { Link } from "react-router-dom"
 import { AppBar } from "../../../../components/appBar/AppBar"
+import { BackButton } from "../../../../components/buttons/BackButton"
 import { NextButton } from "../../../../components/buttons/NextButton"
 import PageContainer from "../../../../components/PageContainer"
 import ProcessPageFooter from "../../../../components/ProcessPageFooter"
@@ -73,7 +74,7 @@ export const CreateAccount = () => {
           </div>
         }
         footer={
-            <ProcessPageFooter acess="/card-address" buttonNext={<NextButton />} />
+            <ProcessPageFooter acess="/create/permission" buttonNext={<NextButton />} buttonBack={<BackButton/>}/>
         }/>  
     </PageContainer>
   )

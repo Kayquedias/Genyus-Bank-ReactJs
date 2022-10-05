@@ -32,7 +32,7 @@ export function ClientCPF() {
           </>
         }
         footer={
-          <ProcessPageFooter acess="/home" buttonBack={<BackButton/>} buttonNext={<NextButton/>}/>
+          <ProcessPageFooter acess="/change-password" buttonBack={<BackButton/>} buttonNext={<NextButton/>}/>
         }
       />
     </PageContainer>

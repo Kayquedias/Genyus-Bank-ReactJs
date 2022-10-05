@@ -59,12 +59,8 @@ export const TransfersPixKey = () => {
           )}
           footer={<ProcessPageFooter
           acess="/TranfersValue"
-          buttonBack={
-          <>
-            <BackButton/>
-            <NextButton/>
-          </>
-        } />}/>
+          buttonNext={<NextButton/>}
+          buttonBack={<BackButton/>} />}/>
       </PageContainer>
     )
 }
