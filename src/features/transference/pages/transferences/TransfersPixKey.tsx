@@ -52,7 +52,9 @@ export const TransfersPixKey = () => {
               <input
               name="input-pix-transferens"
               className="input-pix-transferens"
-              type="radio" />
+              type="radio" 
+              />
+
               <label className="box-pix-choose">
                 <strong>Chave Aleatória:</strong> <br/>
                 f217c691-do3e-7268-654b-af477bbbww11

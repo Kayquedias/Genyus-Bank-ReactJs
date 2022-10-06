@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import PageContainer from "../../../../components/PageContainer"
 import ProcessPageLayout from "../../../../components/ProcessPageLayout"
 import card from "../../../../_assets/card-white.svg"
@@ -12,7 +13,9 @@ export const CardSuccess = () => {
             <img src={card} alt="cartão branco" />
             <h1>Sucesso!</h1>
             <h2>Cartão Solicitado</h2>
-            <button className="btn-success">OK</button>
+            <Link to="/home">
+              <button className="btn-success">OK</button>
+            </Link>
           </div>
         }
       />

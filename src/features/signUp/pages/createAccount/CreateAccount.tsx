@@ -1,5 +1,5 @@
+import { useState } from "react"
 import InputMask from "react-input-mask"
-import { Link } from "react-router-dom"
 import { AppBar } from "../../../../components/appBar/AppBar"
 import { BackButton } from "../../../../components/buttons/BackButton"
 import { NextButton } from "../../../../components/buttons/NextButton"
@@ -11,6 +11,8 @@ import { CreateAccountHeader } from "../../components/AccountHeader/CreateAccoun
 import "./createAccount.scss"
 
 export const CreateAccount = () => {
+  const [inputValue, setInputValue] = useState('')
+
   return (
     <PageContainer>
       <ProcessPageLayout 
@@ -21,7 +23,18 @@ export const CreateAccount = () => {
             <form action="http://localhost:3000/create">
               <div>
                 <label htmlFor="clientFullName">Qual o seu nome completo?</label>
-                <input type="text" id="clientFullName" placeholder="Marlon Mendes" autoComplete="off" required maxLength={60}/>
+                <input 
+                  type="text" 
+                  id="clientFullName" 
+                  placeholder="Marlon Mendes" 
+                  autoComplete="off" 
+                  required 
+                  minLength={10}
+                  maxLength={60}
+                  onChange={(e) => {
+                    setInputValue(e.target.value)
+                  }}
+                />
               </div>
 
               <div>
@@ -33,6 +46,9 @@ export const CreateAccount = () => {
                     name="clientCPF"
                     id="clientCPF"
                     autoComplete="off"  
+                    onChange={(e) => {
+                      setInputValue(e.target.value)
+                    }}
                 />              
               </div>
 

@@ -12,7 +12,7 @@ export function ContractPermission() {
   return (
     <PageContainer>
       <ProcessPageLayout 
-        appBar={<AppBar />}
+        appBar={<AppBar/>}
         header={<AgreementText />}
         main={
           <div className="div-input">
