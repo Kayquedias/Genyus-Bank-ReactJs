@@ -17,6 +17,7 @@ export const TransfersPixKey = () => {
             <>
             <div className="box-pix-transferens-value">
               <input 
+              name="input-pix-transferens"
               className="input-pix-transferens"
               type="radio" />
               <label className="box-pix-choose">
@@ -26,7 +27,8 @@ export const TransfersPixKey = () => {
             </div>
 
             <div className="box-pix-transferens-value">
-              <input 
+              <input
+              name="input-pix-transferens"
               className="input-pix-transferens"
               type="radio" />
               <label className="box-pix-choose">
@@ -36,7 +38,8 @@ export const TransfersPixKey = () => {
             </div>
 
             <div className="box-pix-transferens-value">
-              <input 
+              <input
+              name="input-pix-transferens"
               className="input-pix-transferens"
               type="radio" />
               <label className="box-pix-choose">
@@ -46,7 +49,8 @@ export const TransfersPixKey = () => {
             </div>
 
             <div className="box-pix-transferens-value">
-              <input 
+              <input
+              name="input-pix-transferens"
               className="input-pix-transferens"
               type="radio" />
               <label className="box-pix-choose">
